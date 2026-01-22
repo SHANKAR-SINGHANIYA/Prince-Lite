@@ -1,0 +1,30 @@
+modules = ["java-graalvm22.3"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["gradle", "android-tools", "unzip"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build APK"
+
+[[workflows.workflow]]
+name = "Build APK"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "export ANDROID_HOME=~/android-sdk && export ANDROID_SDK_ROOT=~/android-sdk && ./gradlew assembleDebug --no-daemon"
+
+[workflows.workflow.metadata]
+outputType = "console"

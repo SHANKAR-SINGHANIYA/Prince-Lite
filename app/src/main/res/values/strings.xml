@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Prince Lite</string>
+    <string name="about">Prince Lite</string>
+    <string name="home">Home</string>
+    <string name="refresh">Refresh</string>
+    <string name="extract_cookies">Extract Tokens &amp; Cookies</string>
+    <string name="edit_cookies">Edit Cookies</string>
+    <string name="desktop_mode">Desktop Mode</string>
+    <string name="dev_name">Prince</string>
+    <string name="dev_email">pronce.lite@gmail.com</string>
+    <string name="dev_yt">https://youtube.com/@PrinceLite</string>
+    <string name="dev_github">https://github.com/princelite</string>
+    <string name="dev_fb">https://facebook.com/princelite</string>
+    <string name="current_version">1.2.0</string>
+    <string name="menu_about">About</string>
+    <string name="menu_current_url">See Current URL</string>
+    <string name="no_internet">No Internet connection!</string>
+
+    <string name="preference_title_developer">Developer</string>
+    <string name="preference_title_about_app">About App</string>
+    <string name="preference_title_contact">Contact</string>
+    <string name="preference_title_version">Version</string>
+    <string name="preference_title_app_status">App Status</string>
+    <string name="preference_title_bugs_features">Bugs and Features</string>
+    <string name="preference_title_facebook">Facebook</string>
+    <string name="preference_title_github">GitHub</string>
+    <string name="preference_title_youtube">YouTube</string>
+    <string name="app_status">This app is currently under development</string>
+    <string name="bugs_and_features">Report bugs or suggest features</string>
+    <string name="check_for_updates">Check for updates</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="cookie_formats">
+        <item>String</item>
+        <item>Netscape</item>
+        <item>JSON Array</item>
+        <item>JSON Dictionary</item>
+    </string-array>
+
+    <string name="cookie_format">Cookie Format</string>
+    <string name="invalid_cookie_format">Invalid cookie format. Please check your input.</string>
+</resources>

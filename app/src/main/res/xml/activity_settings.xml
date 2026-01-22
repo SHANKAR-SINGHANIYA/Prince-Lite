@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="General Settings">
+
+        <EditTextPreference
+            android:key="pref_custom_user_agent"
+            android:title="Custom User-Agent"
+            android:summary="Set a custom User-Agent string for requests"
+            android:dialogTitle="Enter User-Agent"
+            android:defaultValue=""
+            android:inputType="text"
+            app:icon="@drawable/ic_user_agent" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_javascript"
+            android:title="Enable JavaScript"
+            android:summary="Allow JavaScript execution in web content"
+            android:defaultValue="true"
+            app:icon="@drawable/baseline_javascript_24" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Storage &amp; Performance">
+
+        <Preference
+            android:key="pref_cache"
+            android:title="Clear Cache"
+            android:summary="Delete cached data to free up space"
+            app:icon="@drawable/baseline_cached_24" />
+
+        <Preference
+            android:key="pref_data"
+            android:title="Clear Storage"
+            android:summary="Reset all app data and settings"
+            app:icon="@drawable/ic_storage" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Advanced Settings">
+
+        <Preference
+            android:key="pref_reset"
+            android:title="Reset to Default"
+            android:summary="Restore all settings to default values"
+            app:icon="@drawable/ic_reset" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
